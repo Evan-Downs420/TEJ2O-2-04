@@ -1,8 +1,13 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Evan
+ * Created on: Feb 2026
+ * This program check the temperture through mirco bit
 */
 
-basic.showString('Hello, World!')
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+input.onButtonPressed(Button.A, function () {
+    let temp = input.temperature()
+    basic.showNumber(temp)
+})
